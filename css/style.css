@@ -1,0 +1,150 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Flamenco', cursive;
+}
+
+header{
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.clearfix:after{
+    content: '.';
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+
+.main-nav li{
+    display: inline block;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.main-nav li a{
+    padding: 5px 0;
+    text-decoration: none;
+    font-size: 90%;
+    font-weight: 100px; 
+}
+
+.main-nav li a:hover{
+    color: brown;
+    border-bottom: 2px red;
+
+}
+
+.main-contain-header{
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+h1{
+    font-size: 260%;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+.btn{
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full{
+    background-color: transparent;
+    color:white;
+    border: 1px solid black;
+    margin-right: 15px;
+}
+
+.btn-full:hover{
+    background-color: blue;
+}
+
+.btn-nav{
+    background-color: transparent;
+    color: green;
+    border: 1px solid black;
+    margin-right: 15px;
+}
+
+.btn-nav:hover{
+    background-color: chocolate;
+}
+
+.colorchange{
+    animation: SoftSolution 1s infinite;
+}
+
+@keyframes SoftSolution{
+    0% {color:chartreuse ;}
+    25% {color: brown;}
+    50%{color: blue;}
+    100%{color: chocolate;}
+}
+
+.mobile-icon{
+    display: none;
+}
+
+@media only screen and (max-width:1180px){
+    .main-contain-header{
+        width: 100%;
+        padding: 0.2%;
+    }
+}
+
+@media :only screen and (max-width:998px){
+    h1{font-size: 200%;}
+}
+
+@media only screen and (max-width: 768px){
+    h1{font-size: 180%;}
+
+    .main-nav{display: none;}
+
+    .mobile-icon{display: inline-block;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+    .main-nav li{
+        float: left;
+        display: block;
+        margin-top: 10px;
+
+    }
+}
+
